@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "allowJs": true,
+    "checkJs": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "module": "es2022",
+    "target": "es2022",
+  },
+  "include": ["**/*.js"],
+  "exclude": ["node_modules", ".node-persist"],
+}

@@ -1,0 +1,22 @@
+{
+  "name": "async-pubnub",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-persist": "^3.1.0",
+    "pubnub": "^7.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.13",
+    "@types/node-persist": "^3.1.2",
+    "@types/pubnub": "^7.2.0",
+    "typescript": "^4.8.2"
+  }
+}
