@@ -194,10 +194,10 @@ export class Stream {
 
   [Symbol.asyncIterator]() {
     return {
-      /** @return {Promise<{ value: any, done: Boolean }>} */
+      /** @return {Promise<IteratorResult<any>>} */
       next: () => this.#listener.waitForMessage(this.#channel),
 
-      /** @return {Promise<{ value: undefined, done: Boolean }>} */
+      /** @return {Promise<IteratorResult<any>>} */
       return: () => {
         this.#pubnub.unsubscribe({ channels: [this.#channel] });
         this.#listener.removeChannel(this.#channel, this);
